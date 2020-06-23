@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activity_GameLaunch.cs" />
+    <Compile Include="Gengine\Components\Drawing\ISprite.cs" />
     <Compile Include="Gengine\Components\Drawing\SpriteSheet.cs" />
     <Compile Include="Gengine\Components\System\Animation.cs" />
     <Compile Include="Gengine\Components\System\Collections\AnimationCollection.cs" />
@@ -69,7 +70,6 @@
     <Compile Include="Gengine\Components\System\FPSkeeper.cs" />
     <Compile Include="Gengine\Components\System\Frame.cs" />
     <Compile Include="Gengine\Components\System\Collections\FrameCollection.cs" />
-    <Compile Include="Gengine\Components\Drawing\Sprite.cs" />
     <Compile Include="Gengine\Components\System\Dev\Debug.cs" />
     <Compile Include="Gengine\Objects\Enemy.cs" />
     <Compile Include="Gengine\Objects\Player.cs" />

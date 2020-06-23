@@ -1,15 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 
 namespace Ace.Gengine.Components.Drawing
 {
@@ -20,5 +9,10 @@ namespace Ace.Gengine.Components.Drawing
 		public Frame(Rectangle bounds) => _Bounds = bounds;
 
 		public Frame(int x, int y, int width, int height) => _Bounds = new Rectangle(x, y, width, height);
+
+		public Rectangle Bounds { get => _Bounds; }
+		public Vector2 Center { get => _Bounds.Center.ToVector2(); }
+		public int Width { get => _Bounds.Width; }
+		public int Height { get => _Bounds.Height; }
 	}
 }
